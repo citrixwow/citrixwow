@@ -94,7 +94,7 @@ var map2 = L.map('map2').setView([61.263194, 46.629453], 14);
 		[61.263194, 46.629453]
 	]).addTo(map2).bindPopup('My Favourite place.');
 
-	function onMapClick(e) {
+	function onMapClick2(e) {
 		popup
 			.setLatLng(e.latlng)
 			.setContent('You clicked the map at ' + e.latlng.toString())
@@ -137,7 +137,7 @@ var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
 		.setContent('My Home.')
 		.openOn(map3);
 
-	function onMapClick(e) {
+	function onMapClick3(e) {
 		popup
 			.setLatLng(e.latlng)
 			.setContent('You clicked the map at ' + e.latlng.toString())
