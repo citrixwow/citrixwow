@@ -12,14 +12,14 @@
 		var marker4 = L.marker([61.246310, 46.641074]).addTo(map4)
 		.bindPopup('<b>My Town</b><br />Kotlas.').openPopup();
 
-		function onMapClick(4) {
+		function onMapClick4(e) {
 		popup
 			.setLatLng(e.latlng)
 			.setContent('You clicked the map at ' + e.latlng.toString())
 			.openOn(map4);
 	}
 
-	map.on('click', onMapClick(4));
+	map.on('click', onMapClick4);
 
 
 var map = L.map('map').setView([61.240138, 46.646512], 14);
@@ -67,14 +67,14 @@ var map1 = L.map('map1').setView([61.240138, 46.646512], 14);
 			radius: 100
 		}).addTo(map1).bindPopup('My School.');
 
-		function onMapClick(1) {
+		function onMapClick1(e) {
 		popup
 			.setLatLng(e.latlng)
 			.setContent('You clicked the map at ' + e.latlng.toString())
 			.openOn(map1);
 	}
 
-	map.on('click', onMapClick(1));
+	map.on('click', onMapClick1);
 
 
 var map2 = L.map('map2').setView([61.263194, 46.629453], 14);
@@ -94,14 +94,14 @@ var map2 = L.map('map2').setView([61.263194, 46.629453], 14);
 		[61.263194, 46.629453]
 	]).addTo(map2).bindPopup('My Favourite place.');
 
-	function onMapClick(2) {
+	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
 			.setContent('You clicked the map at ' + e.latlng.toString())
 			.openOn(map2);
 	}
 
-	map.on('click', onMapClick(2));
+	map.on('click', onMapClick2);
 
 
 var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
@@ -144,5 +144,5 @@ var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
 			.openOn(map3);
 	}
 
-	map.on('click', onMapClick(3));
+	map.on('click', onMapClick3);
 
