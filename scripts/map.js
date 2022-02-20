@@ -19,7 +19,7 @@
 			.openOn(map4);
 	}
 
-	map.on('click', onMapClick4);
+	map4.on('click', onMapClick4);
 
 
 var map = L.map('map').setView([61.240138, 46.646512], 14);
@@ -74,7 +74,7 @@ var map1 = L.map('map1').setView([61.240138, 46.646512], 14);
 			.openOn(map1);
 	}
 
-	map.on('click', onMapClick1);
+	map1.on('click', onMapClick1);
 
 
 var map2 = L.map('map2').setView([61.263194, 46.629453], 14);
@@ -101,7 +101,7 @@ var map2 = L.map('map2').setView([61.263194, 46.629453], 14);
 			.openOn(map2);
 	}
 
-	map.on('click', onMapClick2);
+	map2.on('click', onMapClick2);
 
 
 var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
@@ -144,5 +144,5 @@ var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
 			.openOn(map3);
 	}
 
-	map.on('click', onMapClick3);
+	map3.on('click', onMapClick3);
 
