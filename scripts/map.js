@@ -21,6 +21,8 @@
 
 	map.on('click', onMapClick);
 
+
+
 var map1 = L.map('map1').setView([61.240138, 46.646512], 14);
 	
 		var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -48,4 +50,73 @@ var map1 = L.map('map1').setView([61.240138, 46.646512], 14);
 
 	map.on('click', onMapClick);
 
+
+var map2 = L.map('map2').setView([61.263194, 46.629453], 14);
+	
+		var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+			maxZoom: 24,
+			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+				'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+			id: 'mapbox/streets-v11',
+			tileSize: 512,
+			zoomOffset: -1
+		}).addTo(map2);
+
+		var polygon = L.polygon([
+		[61.260270, 46.627212],
+		[61.262262, 46.625622],
+		[61.263194, 46.629453]
+	]).addTo(map2).bindPopup('My Favourite place.');
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent('You clicked the map at ' + e.latlng.toString())
+			.openOn(map2);
+	}
+
+	map.on('click', onMapClick);
+
+
+var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
+	
+		var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+			maxZoom: 13,
+			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+				'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+			id: 'mapbox/streets-v11',
+			tileSize: 512,
+			zoomOffset: -1
+		}).addTo(map3);
+
+		var marker = L.marker([61.246310, 46.641074]).addTo(map3)
+		.bindPopup('<b>My Town</b><br />Kotlas.').openPopup();
+
+	var circle = L.circle([61.239264, 46.64782], {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5,
+		radius: 100
+	}).addTo(map3).bindPopup('My School.');
+
+	var polygon = L.polygon([
+		[61.260270, 46.627212],
+		[61.262262, 46.625622],
+		[61.263194, 46.629453]
+	]).addTo(map3).bindPopup('My Favourite place.');
+
+
+	var popup = L.popup()
+		.setLatLng([61.240138, 46.646512])
+		.setContent('My Home.')
+		.openOn(map3);
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent('You clicked the map at ' + e.latlng.toString())
+			.openOn(map3);
+	}
+
+	map.on('click', onMapClick);
 
