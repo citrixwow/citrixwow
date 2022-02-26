@@ -1,14 +1,19 @@
  body
  {
-	 font-family: Verdana;
+	 font-family: tahoma;
+         font-stretch: expanded;
+         font-style: unset;
 	 padding: 30px;
-     width: 1250px;
-     height: 4900px;
 	 text-align: center;
-	 border-left: 2px solid rgba(75, 8, 161, 0.877);
-     border-right: 2px solid rgba(75, 8, 161, 0.877);
-     margin:auto;
-	 color:rgba(75, 8, 161, 0.877);
+         margin:auto;
+	 color:rgb(240, 89, 89);
+ }
+
+.fon
+ {
+    background: url(../images/fon.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
  }
 
  div
@@ -26,11 +31,6 @@
 	 padding: 50px;
  }
 
- ul
- {
-     font-size:70px;
- }
-
  p
  {
 	 font-size:25px;
@@ -38,11 +38,25 @@
 
 .img1
 {
-     width: 60%;
-	 margin: auto;
+         width: 55%;
+	 border-style: solid;
+         border-color: rgb(240, 89, 89);
+         border-width:2px ;
 }
-</style>
 
+a
+{   
+     font-size: 20px;
+     color:rgb(240, 89, 89);
+     padding:20px;
+}
 
+img
+{
+     width:5%;
+}
 
-
+.img2
+{
+     width: 4%;
+}
