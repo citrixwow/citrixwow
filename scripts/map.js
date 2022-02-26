@@ -10,12 +10,12 @@
 		}).addTo(map4);
 
 		var marker4 = L.marker([61.246310, 46.641074]).addTo(map4)
-		.bindPopup('<b>My Town</b><br />Kotlas.').openPopup();
+		.bindPopup("<b style='color:red'>Мой город</b><br/> <span style='color:blue;'>Котлас.</span>").openPopup();
 
 		function onMapClick4(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent('You clicked the map at ' + e.latlng.toString())
+			.setContent("<div style='color:red;'>Ты нажал на координаты </div>" + e.latlng.toString())
 			.openOn(map4);
 	}
 
@@ -35,14 +35,14 @@ var map = L.map('map').setView([61.240138, 46.646512], 14);
 
 	    var popup = L.popup()
 		.setLatLng([61.240138, 46.646512])
-		.setContent('My Home.')
+		.setContent("<div style='color:red'>Мой дом.</div>")
 		.openOn(map);
 
 		function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent('You clicked the map at ' + e.latlng.toString())
-			.openOn(map3);
+			.setContent("<div style='color:red;'>Ты нажал на координаты </div>" + e.latlng.toString())
+			.openOn(map);
 	}
 
 	map.on('click', onMapClick);
@@ -65,12 +65,12 @@ var map1 = L.map('map1').setView([61.240138, 46.646512], 14);
 			fillColor: '#f03',
 			fillOpacity: 0.5,
 			radius: 100
-		}).addTo(map1).bindPopup('My School.');
+		}).addTo(map1).bindPopup("<div style='color:red;'>Моя школа.</div>");
 
 		function onMapClick1(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent('You clicked the map at ' + e.latlng.toString())
+			.setContent("<div style='color:red;'>Ты нажал на координаты </div>" + e.latlng.toString())
 			.openOn(map1);
 	}
 
@@ -92,12 +92,12 @@ var map2 = L.map('map2').setView([61.263194, 46.629453], 14);
 		[61.260270, 46.627212],
 		[61.262262, 46.625622],
 		[61.263194, 46.629453]
-	]).addTo(map2).bindPopup('My Favourite place.');
+	]).addTo(map2).bindPopup("<div style='color:red;'>Мое любимое место.</div>");
 
 	function onMapClick2(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent('You clicked the map at ' + e.latlng.toString())
+			.setContent("<div style='color:red;'>Ты нажал на координаты </div>" + e.latlng.toString())
 			.openOn(map2);
 	}
 
@@ -123,24 +123,24 @@ var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
 		fillColor: '#f03',
 		fillOpacity: 0.5,
 		radius: 100
-	}).addTo(map3).bindPopup('My School.');
+	}).addTo(map3).bindPopup("<div style='color:red;'>Моя школа.</div>");
 
 	var polygon = L.polygon([
 		[61.260270, 46.627212],
 		[61.262262, 46.625622],
 		[61.263194, 46.629453]
-	]).addTo(map3).bindPopup('My Favourite place.');
+	]).addTo(map3).bindPopup("<div style='color:red;'>Мое любимое место.</div>");
 
 
 	var popup = L.popup()
 		.setLatLng([61.240138, 46.646512])
-		.setContent('My Home.')
+		.setContent("<div style='color:red'>Мой дом.</div>")
 		.openOn(map3);
 
 	function onMapClick3(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent('You clicked the map at ' + e.latlng.toString())
+			.setContent("<div style='color:red;'>Ты нажал на координаты </div>" + e.latlng.toString())
 			.openOn(map3);
 	}
 
