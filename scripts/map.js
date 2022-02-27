@@ -147,3 +147,7 @@ var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
 
 	map3.on('click', onMapClick3);
 
+function testButtonClick(e)
+{
+	console.log('Нажали Test button');
+}
