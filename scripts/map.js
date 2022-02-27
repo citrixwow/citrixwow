@@ -17,6 +17,7 @@
 			.setLatLng(e.latlng)
 			.setContent("<div style='color:red;'>Ты нажал на координаты </div>" + e.latlng.toString())
 			.openOn(map4);
+			console.log('Ты нажал на координаты' + e.latlng.toString());
 	}
 
 	map4.on('click', onMapClick4);
