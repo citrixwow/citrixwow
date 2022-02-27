@@ -116,7 +116,7 @@ var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
 		}).addTo(map3);
 
 		var marker = L.marker([61.246310, 46.641074]).addTo(map3)
-		.bindPopup('<b>My Town</b><br />Kotlas.').openPopup();
+		.bindPopup("<b style='color:red'>Мой город</b><br/> <span style='color:blue;'>Котлас.</span>").openPopup();
 
 	var circle = L.circle([61.239264, 46.64782], {
 		color: 'red',
