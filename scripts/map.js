@@ -150,4 +150,11 @@ var map3 = L.map('map3').setView([61.248970, 46.645845], 14);
 function testButtonClick(e)
 {
 	console.log('Нажали Test button');
+	
+	var num1 = 15;
+	var num2 = 3;
+	var num3 = 0;
+	
+	var r12 = num1 / num2;
+	var r13 = num1 / num3;
 }
